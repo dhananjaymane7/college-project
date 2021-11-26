@@ -62,7 +62,6 @@ public class Home extends Frame implements ActionListener {
         b3.setBackground(Color.red);
         b3.setForeground(Color.white);
 
-
         b4 = new JButton("DRINKS");
         b4.setBounds(1150, 105, 150, 35);
         b4.setFont(f1);

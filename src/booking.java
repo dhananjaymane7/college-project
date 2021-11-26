@@ -1,13 +1,9 @@
 package src;
 
-import java.awt.*;
-import javax.swing.*;
-import java.applet.*;
 import javax.swing.*;
 import java.awt.*;
-import javax.swing.JOptionPane;
-import java.sql.*;
-import java.awt.event.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 // Registartion Page
 public class booking extends Frame implements ActionListener
 {
