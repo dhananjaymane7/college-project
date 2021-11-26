@@ -2,14 +2,14 @@ import javax.swing.*;
 import java.awt.*;
 import java.applet.*;
 import java.awt.event.*;
-public class book1 extends Frame
+public class book2 extends Frame
 {
     JLabel label1,label2,label3,label4,label5,label6;
     JButton button;
     Font font=(new Font("Sans-Serif",Font.BOLD,17));
     ImageIcon image1;
 
-    public book1()
+    public book2()
     {
         setVisible(true);
         setLayout(null);
@@ -21,6 +21,10 @@ public class book1 extends Frame
         label1.setFont(font);
         label1.setForeground(Color.white);
         add(label1);
+    }
+    public static void main(String[] args)
+    {
+        new book2();
     }
 
 }
