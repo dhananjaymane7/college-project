@@ -10,6 +10,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class Login extends Frame implements ActionListener {
+
+    public static String IMAGE_PATH = "data/images/";
+
     Font f = (new Font("Gorgia", Font.BOLD, 23));
     Font f1 = (new Font("Sans-Serif", Font.BOLD, 45));
     Font f2 = (new Font("Sans-Serif", Font.BOLD, 17));
@@ -28,7 +31,7 @@ public class Login extends Frame implements ActionListener {
 
         l1 = new JLabel();
         l1.setBounds(0, 0, 1657, 300);
-        i1 = new ImageIcon("title.jpg");
+        i1 = new ImageIcon(IMAGE_PATH + "title.jpg");
         l1.setIcon(i1);
         add(l1);
 
@@ -63,13 +66,13 @@ public class Login extends Frame implements ActionListener {
 
         l5 = new JLabel();
         l5.setBounds(0, 750, 1657, 279);
-        i2 = new ImageIcon("front.jpg");
+        i2 = new ImageIcon(IMAGE_PATH + "front.jpg");
         l5.setIcon(i2);
         add(l5);
 
         l6 = new JLabel();
         l6.setBounds(250, 630, 1155, 104);
-        i4 = new ImageIcon("lg.jpg");
+        i4 = new ImageIcon(IMAGE_PATH + "lg.jpg");
         l6.setIcon(i4);
         add(l6);
 
@@ -163,7 +166,7 @@ public class Login extends Frame implements ActionListener {
 
                     }
                     //co.close();
-                    if (x == true) {
+                    if (x) {
                         JOptionPane.showMessageDialog(this, "Login Successfully...");
                         Home h = new Home();
                     } else {
@@ -197,7 +200,7 @@ public class Login extends Frame implements ActionListener {
         }
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         Login e = new Login();
 

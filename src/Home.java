@@ -5,8 +5,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import static src.Login.IMAGE_PATH;
+
 public class Home extends Frame implements ActionListener {
-    Font f = (new Font("Sans-Serif", Font.BOLD, 45));
     Font f1 = (new Font("Sans-Serif", Font.BOLD, 17));
     JLabel l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16, l17, l18, l19, l20;
     JCheckBox c1, c2, c3, c4, c5, c6, c7, c8, c9;
@@ -22,18 +23,18 @@ public class Home extends Frame implements ActionListener {
         setLayout(null);
         setBackground(Color.black);
 
-        i2 = new ImageIcon("t1.jpg");
+        i2 = new ImageIcon(IMAGE_PATH + "t1.jpg");
         l2 = new JLabel(i2);
         l2.setBounds(0, 45, 1657, 141);
         add(l2);
 
 
-        i3 = new ImageIcon("b1.jpg");
+        i3 = new ImageIcon(IMAGE_PATH + "b1.jpg");
         l3 = new JLabel(i3);
         l3.setBounds(0, 200, 1657, 650);
         add(l3);
 
-        i4 = new ImageIcon("sign.jpg");
+        i4 = new ImageIcon( IMAGE_PATH + "sign.jpg");
         l4 = new JLabel(i4);
         l4.setBounds(0, 850, 1657, 196);
         add(l4);
@@ -87,13 +88,13 @@ public class Home extends Frame implements ActionListener {
     public void actionPerformed(ActionEvent ae) {
         String b = ae.getActionCommand();
         if (b.equals("MOVIES")) {
-            Movie1 m = new Movie1();
+            new Movie1();
         }
         if (b.equals("SNAKS")) {
-            Snacks s = new Snacks();
+            new Snacks();
         }
         if (b.equals("DRINKS")) {
-            Drinks d = new Drinks();
+            new Drinks();
         }
 			/*if(b.equals("LOCAT_US"))
 			{
@@ -101,8 +102,8 @@ public class Home extends Frame implements ActionListener {
 			}*/
     }
 
-    public static void main(String args[]) {
-        Home h = new Home();
+    public static void main(String[] args) {
+        new Home();
     }
 
 }

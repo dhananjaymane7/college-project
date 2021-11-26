@@ -5,6 +5,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import static src.Login.IMAGE_PATH;
+
 public class Selling extends Frame implements ActionListener {
     Font f = (new Font("Sans-Serif", Font.BOLD, 45));
     Font f1 = (new Font("Sans-Serif", Font.BOLD, 17));
@@ -24,17 +26,17 @@ public class Selling extends Frame implements ActionListener {
         setLayout(null);
         setBackground(Color.white);
         //on frame
-        i2 = new ImageIcon("m1.jpg");
+        i2 = new ImageIcon(IMAGE_PATH + "m1.jpg");
         l2 = new JLabel(i2);
         l2.setBounds(0, 24, 1900, 111);
         add(l2);
 
-        i3 = new ImageIcon("to1.jpg");
+        i3 = new ImageIcon(IMAGE_PATH + "to1.jpg");
         l3 = new JLabel(i3);
         l3.setBounds(8, 150, 1900, 350);
         add(l3);
 
-        i4 = new ImageIcon("to2.jpg");
+        i4 = new ImageIcon(IMAGE_PATH + "to2.jpg");
         l4 = new JLabel(i4);
         l4.setBounds(8, 570, 1900, 350);
         add(l4);
@@ -52,7 +54,7 @@ public class Selling extends Frame implements ActionListener {
 
     }
 
-    public static void main(String args[]) {
-        Selling s1 = new Selling();
+    public static void main(String[] args) {
+        new Selling();
     }
 }

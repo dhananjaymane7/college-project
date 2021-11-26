@@ -5,6 +5,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import static src.Login.IMAGE_PATH;
+
 public class Movie extends Frame implements ActionListener {
     Font f = (new Font("Sans-Serif", Font.BOLD, 45));
     Font f1 = (new Font("Sans-Serif", Font.BOLD, 17));
@@ -23,17 +25,17 @@ public class Movie extends Frame implements ActionListener {
         setLayout(null);
         setBackground(Color.white);
 
-        i2 = new ImageIcon("movie.jpg");
+        i2 = new ImageIcon(IMAGE_PATH + "movie.jpg");
         l2 = new JLabel(i2);
         l2.setBounds(0, 250, 1657, 377);
         add(l2);
 
-        i1 = new ImageIcon("front.jpg");
+        i1 = new ImageIcon(IMAGE_PATH + "front.jpg");
         l1 = new JLabel(i1);
         l1.setBounds(0, 0, 1657, 244);
         add(l1);
 
-        i3 = new ImageIcon("movie3.jpg");
+        i3 = new ImageIcon(IMAGE_PATH + "movie3.jpg");
         l3 = new JLabel(i3);
         l3.setBounds(0, 680, 1657, 377);
         add(l3);

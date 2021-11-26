@@ -5,9 +5,10 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class Action1 extends Frame implements ActionListener
+import static src.Login.IMAGE_PATH;
+
+class Action2 extends Frame implements ActionListener
 {
-	Font f=(new Font("Sans-Serif",Font.BOLD, 45));
 	Font f1=(new Font("Sans-Serif",Font.BOLD, 17));
 	JLabel l1,l2,l3,l4,l5,l6,l7,l8,l9,l10,l11,l12,l13,l14,l15,l16,l17,l18,l19,l20;
 	JCheckBox c1,c2,c3,c4,c5,c6,c7,c8,c9;
@@ -17,7 +18,7 @@ class Action1 extends Frame implements ActionListener
     JPanel d,d1,d2,d3,d4,d5,d6,d7;
 
 
-	public Action1()
+	public Action2()
 	{
 
 		setVisible(true);
@@ -26,17 +27,17 @@ class Action1 extends Frame implements ActionListener
 		setLayout(null);
 		setBackground(Color.white);
         //on frame
-          i2=new ImageIcon("m1.jpg");
+          i2=new ImageIcon(IMAGE_PATH + "m1.jpg");
 		l2=new JLabel(i2);
 		l2.setBounds(0,24,1900,111);
 		add(l2);
 
-        i3=new ImageIcon("aa1.jpg");
+        i3=new ImageIcon(IMAGE_PATH + "aa1.jpg");
 		l3=new JLabel(i3);
 		l3.setBounds(8,150,1900,350);
 		add(l3);
 
-		i4=new ImageIcon("aa2.jpg");
+		i4=new ImageIcon(IMAGE_PATH + "aa2.jpg");
 		l4=new JLabel(i4);
 		l4.setBounds(8,570,1900,350);
 		add(l4);
@@ -54,8 +55,8 @@ class Action1 extends Frame implements ActionListener
 	{
 		
     }
-    public static void main(String args[])
+    public static void main(String[] args)
     {
-        Action1 a=new Action1();
+		new Action2();
     }
 }

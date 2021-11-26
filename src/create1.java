@@ -8,6 +8,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
+import static src.Login.IMAGE_PATH;
+
 // Registartion Page
 public class create1 extends Frame implements ActionListener {
     Font f = (new Font("Sans-Serif", Font.BOLD, 45));
@@ -27,7 +29,7 @@ public class create1 extends Frame implements ActionListener {
         setBackground(Color.black);
 
 
-        im1 = new ImageIcon("sign.jpg");
+        im1 = new ImageIcon(IMAGE_PATH + "sign.jpg");
         l1 = new JLabel(im1);
         l1.setBounds(0, 20, 1657, 196);
         add(l1);

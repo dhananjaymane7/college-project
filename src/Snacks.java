@@ -5,6 +5,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import static src.Login.IMAGE_PATH;
+
 class Snacks extends Frame implements ActionListener {
     Font f = (new Font("Sans-Serif", Font.BOLD, 45));
     Font f1 = (new Font("Sans-Serif", Font.BOLD, 17));
@@ -23,12 +25,12 @@ class Snacks extends Frame implements ActionListener {
         setLayout(null);
         setBackground(Color.black);
 
-        i2 = new ImageIcon("snaks3.jpg");
+        i2 = new ImageIcon(IMAGE_PATH + "snaks3.jpg");
         l2 = new JLabel(i2);
         l2.setBounds(179, 180, 1285, 812);
         add(l2);
 
-        i1 = new ImageIcon("snaks4.jpg");
+        i1 = new ImageIcon(IMAGE_PATH + "snaks4.jpg");
         l1 = new JLabel(i1);
         l1.setBounds(0, 0, 1657, 161);
         add(l1);
@@ -118,7 +120,7 @@ class Snacks extends Frame implements ActionListener {
         JOptionPane.showMessageDialog(this, msg + "Total = " + amt);
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Snacks m = new Snacks();
     }
 }

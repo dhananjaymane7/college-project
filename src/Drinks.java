@@ -5,6 +5,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import static src.Login.IMAGE_PATH;
+
 public class Drinks extends Frame implements ActionListener {
     Font f = (new Font("Sans-Serif", Font.BOLD, 45));
     Font f1 = (new Font("Sans-Serif", Font.BOLD, 17));
@@ -23,12 +25,12 @@ public class Drinks extends Frame implements ActionListener {
         setLayout(null);
         setBackground(Color.black);
 
-        i2 = new ImageIcon("Drinks1.jpg");
+        i2 = new ImageIcon(IMAGE_PATH + "Drinks1.jpg");
         l2 = new JLabel(i2);
         l2.setBounds(0, 250, 1657, 830);
         add(l2);
 
-        i1 = new ImageIcon("Drinks.jpg");
+        i1 = new ImageIcon(IMAGE_PATH + "Drinks.jpg");
         l1 = new JLabel(i1);
         l1.setBounds(0, 0, 1657, 244);
         add(l1);

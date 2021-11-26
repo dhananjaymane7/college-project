@@ -3,6 +3,8 @@ package src;
 import javax.swing.*;
 import java.awt.*;
 
+import static src.Login.IMAGE_PATH;
+
 public class Booking1 extends Frame //implements ActionListener
 {
     Font f = (new Font("Gorgia", Font.BOLD, 23));
@@ -21,7 +23,7 @@ public class Booking1 extends Frame //implements ActionListener
         setLayout(null);
         setBackground(Color.black);
 
-        i1 = new ImageIcon("ground.jpg");
+        i1 = new ImageIcon(IMAGE_PATH + "ground.jpg");
         l1 = new JLabel(i1);
         l1.setBounds(0, 0, 1657, 850);
         add(l1);
