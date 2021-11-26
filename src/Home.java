@@ -90,7 +90,7 @@ public class Home extends Frame implements ActionListener {
             Movie1 m = new Movie1();
         }
         if (b.equals("SNAKS")) {
-            Snaks s = new Snaks();
+            Snacks s = new Snacks();
         }
         if (b.equals("DRINKS")) {
             Drinks d = new Drinks();

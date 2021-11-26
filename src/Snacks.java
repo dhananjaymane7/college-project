@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class Snaks extends Frame implements ActionListener {
+class Snacks extends Frame implements ActionListener {
     Font f = (new Font("Sans-Serif", Font.BOLD, 45));
     Font f1 = (new Font("Sans-Serif", Font.BOLD, 17));
     JLabel l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16, l17, l18, l19, l20;
@@ -15,7 +15,7 @@ class Snaks extends Frame implements ActionListener {
     String msg = "";
 
 
-    public Snaks() {
+    public Snacks() {
 
         setVisible(true);
 
@@ -119,6 +119,6 @@ class Snaks extends Frame implements ActionListener {
     }
 
     public static void main(String args[]) {
-        Snaks m = new Snaks();
+        Snacks m = new Snacks();
     }
 }
