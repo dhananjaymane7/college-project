@@ -1,16 +1,11 @@
-import java.awt.*;
-import javax.swing.*;
-import java.applet.*;
-import javax.swing.*;
-import java.awt.*;
-import javax.swing.JOptionPane;
-import java.sql.*;
-import java.awt.event.*;
-import java.awt.FlowLayout;  
-import javax.swing.JFrame;  
-import javax.swing.JScrollPane;  
+package src;
 
-public class Action extends Frame implements ActionListener
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+class Action1 extends Frame implements ActionListener
 {
 	Font f=(new Font("Sans-Serif",Font.BOLD, 45));
 	Font f1=(new Font("Sans-Serif",Font.BOLD, 17));
@@ -22,7 +17,7 @@ public class Action extends Frame implements ActionListener
     JPanel d,d1,d2,d3,d4,d5,d6,d7;
 
 
-	public Action()
+	public Action1()
 	{
 
 		setVisible(true);
@@ -61,6 +56,6 @@ public class Action extends Frame implements ActionListener
     }
     public static void main(String args[])
     {
-        Action a=new Action();
+        Action1 a=new Action1();
     }
 }

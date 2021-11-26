@@ -1,3 +1,5 @@
+package src;
+
 import javax.swing.*;
 import java.applet.*;
 import java.awt.*;

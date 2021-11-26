@@ -1,3 +1,5 @@
+package src;
+
 import java.awt.*;
 import javax.swing.*;
 import java.applet.*;
@@ -10,7 +12,7 @@ import java.awt.FlowLayout;
 import javax.swing.JFrame;  
 import javax.swing.JScrollPane;  
 
-public class Snaks extends Frame implements ActionListener
+class SnaksOld extends Frame implements ActionListener
 {
 	Font f=(new Font("Sans-Serif",Font.BOLD, 45));
 	Font f1=(new Font("Sans-Serif",Font.BOLD, 17));
@@ -21,7 +23,7 @@ public class Snaks extends Frame implements ActionListener
     String msg="";
 
 
-	public Snaks()
+	public SnaksOld()
 	{
 
 		setVisible(true);
@@ -128,6 +130,6 @@ public class Snaks extends Frame implements ActionListener
 	
     public static void main(String args[])
     {
-        Snaks m=new Snaks();
+        SnaksOld m=new SnaksOld();
     }
 }
